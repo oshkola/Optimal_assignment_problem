@@ -1,0 +1,7 @@
+language: cpp
+
+compiler: gcc
+  
+script:
+- g++ optimal_assignment.cpp -o optimal_assignment
+- ./optimal_assignment
