@@ -8,7 +8,7 @@ using namespace std;
 
 void optimalAssignments(string strArr[], int arrLength)
 {
-    vector<vector<int>> mixedMatrix(arrLength);
+    vector<vector<int> > mixedMatrix(arrLength);
     char comma = ',', lbracket = '(', rbracket = ')';
     
     for(int x = 0; x < arrLength; x++)
@@ -16,7 +16,7 @@ void optimalAssignments(string strArr[], int arrLength)
         strArr[x].erase(remove(strArr[x].begin(), strArr[x].end(), '('), strArr[x].end());
         strArr[x].erase(remove(strArr[x].begin(), strArr[x].end(), ')'), strArr[x].end());
     }
-    vector<vector<int>> tmp(arrLength);
+    vector<vector<int> > tmp(arrLength);
 
     for(int x = 0; x < arrLength; x++)
     {
