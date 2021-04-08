@@ -51,7 +51,6 @@ void optimalAssignments(string strArr[], int arrLength)
                 minIndex = min_element(mixedMatrix[i].begin(), mixedMatrix[i].end()) - mixedMatrix[i].begin() + 1;
             }
         }
-
         minCostIndex.push_back(minIndex);
     }
     for(int i = 1; i <= minCostIndex.size(); i++)
@@ -60,7 +59,6 @@ void optimalAssignments(string strArr[], int arrLength)
 
 int main()
 {
-
   string A[] = {"(1,2,1)", "(4,1,5)", "(5,2,1)"};
   int arrLength = sizeof(A) / sizeof(*A);
   optimalAssignments(A, arrLength);
